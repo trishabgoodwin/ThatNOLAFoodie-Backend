@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS posts CASCADE
+
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE postss(
+    id SERIAL PRIMARY KEY,
+    title TEXT UNIQUE NOT NULL,
+    neighborhood TEXT NOT NULL,
+    cuisine TEXT NOT NULL,
+    review TEXT NOT NULL
+);
