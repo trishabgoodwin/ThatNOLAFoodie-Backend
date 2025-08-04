@@ -12,6 +12,6 @@ CREATE TABLE posts(
     title TEXT UNIQUE NOT NULL,
     neighborhood TEXT NOT NULL,
     cuisine TEXT NOT NULL,
-    photo IMAGE NOT NULL,
+    photo BYTEA NOT NULL,
     review TEXT NOT NULL
 );
