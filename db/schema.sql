@@ -7,10 +7,11 @@ CREATE TABLE users(
     password TEXT NOT NULL
 );
 
-CREATE TABLE postss(
+CREATE TABLE posts(
     id SERIAL PRIMARY KEY,
     title TEXT UNIQUE NOT NULL,
     neighborhood TEXT NOT NULL,
     cuisine TEXT NOT NULL,
+    photo IMAGE NOT NULL,
     review TEXT NOT NULL
 );
